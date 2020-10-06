@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../../../assets/Backgrounds/Bg_Header.png");
+  /* background-color: black; */
+}
+.logo {
+  height: 100px;
+  width: 150px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+
+a {
+  color: black;
+  padding: 0 8px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: white;
+  color: #09e7ea;
+}
+
+.boton-login {
+  background-color: white;
+  width: 160px;
+  padding: 10px;
+  color: #09e7ea;
+  border-style: solid;
+  border-color: #09e7ea;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
