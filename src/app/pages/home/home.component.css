@@ -1,0 +1,15 @@
+.welcome {
+  margin-top: 80px;
+  background-image: url("../../../assets/Backgrounds/Bg_Footer.png");
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.welcome-text {
+  text-align: left;
+  font-size: 45px;
+  width: 300px;
+}
