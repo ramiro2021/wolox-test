@@ -6,10 +6,64 @@
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
+  font-family: "Monserrat", sans-serif;
 }
 
-.welcome-text {
+.welcome-text,
+p {
   text-align: left;
   font-size: 45px;
   width: 300px;
+}
+
+.welcome-img {
+  /* TODO: ACHICAR RESPONSIVE */
+  width: 600px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgb(243, 243, 243);
+  font-family: "Monserrat", sans-serif;
+}
+
+.info-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+}
+
+.info-image-text {
+  position: absolute;
+  text-align: center;
+}
+
+#text {
+  text-align: center;
+  justify-content: center;
+}
+
+.info-text {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.follow-button {
+  background: transparent;
+  width: 160px;
+  padding: 10px;
+  color: white;
+  border-style: solid;
+  border-color: dodgerblue;
+  border-radius: 50px;
+}
+
+.follow-button:hover {
+  background-color: rgb(193, 224, 250);
+  color: dodgerblue;
 }

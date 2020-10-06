@@ -7,7 +7,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
   /* background-color: black; */
 }
 .logo {
@@ -35,16 +36,21 @@ a {
 
 a:hover {
   background-color: white;
-  color: #09e7ea;
+  color: dodgerblue;
 }
 
 .boton-login {
   background-color: white;
   width: 160px;
   padding: 10px;
-  color: #09e7ea;
+  color: dodgerblue;
   border-style: solid;
-  border-color: #09e7ea;
+  border-color: dodgerblue;
   border-radius: 50px;
   margin-bottom: 5px;
+}
+
+.boton-login:hover {
+  background-color: rgb(193, 224, 250);
+  color: dodgerblue;
 }
