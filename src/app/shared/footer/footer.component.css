@@ -1,0 +1,7 @@
+.footer {
+  display: flex;
+  height: 150px;
+  background-image: url("../../../assets/Backgrounds/Bg_Footer.png");
+  justify-content: center;
+  align-items: flex-end;
+}
