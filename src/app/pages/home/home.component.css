@@ -35,6 +35,8 @@ p {
   font-family: "Monserrat", sans-serif;
 }
 
+/* zquierda */
+
 .info-image {
   display: flex;
   justify-content: center;
@@ -71,14 +73,6 @@ p {
   height: 60px;
   width: 60px;
 }
-/* Derecha */
-
-.info-text {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-}
 
 .follow-button {
   background: transparent;
@@ -93,6 +87,15 @@ p {
 .follow-button:hover {
   background-color: rgb(193, 224, 250);
   color: dodgerblue;
+}
+
+/* Derecha */
+
+.info-text {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 /* FIN SECCION INFO/WOLOXERS */

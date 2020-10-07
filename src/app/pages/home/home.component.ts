@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Benefits } from 'src/app/models/benefit.model';
 
 @Component({
   selector: 'app-home',
@@ -46,9 +47,4 @@ export class HomeComponent implements OnInit {
 
 
 
-}
-
-interface Benefits {
-  name: string;
-  image: string;
 }
