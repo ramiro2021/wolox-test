@@ -39,6 +39,13 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goTwitter(): void {
+    window.location.href = 'https://twitter.com/Wolox';
+  }
+
+
+
+
 }
 
 interface Benefits {

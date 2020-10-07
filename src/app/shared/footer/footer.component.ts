@@ -12,4 +12,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goWoloxPage(): void {
+    window.location.href = 'https://www.wolox.com.ar/';
+  }
 }

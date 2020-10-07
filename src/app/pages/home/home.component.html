@@ -24,11 +24,17 @@
     />
     <div class="info-image-text">
       <p id="text">
-        <strong style="color: greenyellow"> 350 + </strong>
-        <strong style="color: dodgerblue">Woloxers</strong>
+        <strong style="color: greenyellow"> 350 +</strong>
+
+        <strong style="color: dodgerblue"> Woloxers</strong>
       </p>
-      <p id="text" style="color: white">Twitter</p>
-      <button class="follow-button">Siguenos</button>
+      <div class="twitter-div">
+        <p id="sub-text">
+          <img class="twitter-logo" src="./assets/twitter.png" alt="" />@Wolox
+        </p>
+      </div>
+
+      <button class="follow-button" (click)="goTwitter()">Siguenos</button>
     </div>
   </div>
 
@@ -45,7 +51,7 @@
   <strong style="color: dodgerblue"> ;) </strong>
 </h3>
 
-<div class="benefits">
+<div id="benefits" class="benefits">
   <div class="Individual-benefit" *ngFor="let benefit of benefits">
     <img src="{{ benefit.image }}" alt="{{ benefit.name }}" />
     <h5>{{ benefit.name }}</h5>
