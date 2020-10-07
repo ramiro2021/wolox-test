@@ -39,3 +39,15 @@
     </p>
   </div>
 </div>
+
+<h3 class="benefits-title">
+  Entre los beneficios que ofrecemos se encuentran
+  <strong style="color: dodgerblue"> ;) </strong>
+</h3>
+
+<div class="benefits">
+  <div class="Individual-benefit" *ngFor="let benefit of benefits">
+    <img src="{{ benefit.image }}" alt="{{ benefit.name }}" />
+    <h5>{{ benefit.name }}</h5>
+  </div>
+</div>
