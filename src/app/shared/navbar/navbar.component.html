@@ -8,7 +8,23 @@
     <li routerLinkActive="active">
       <a href="#benefits"><strong> Beneficios</strong></a>
     </li>
+    <li routerLinkActive="active">
+      <a routerLink="/list-tech"><strong> Tecnologias</strong></a>
+    </li>
+    <button
+      *ngIf="!this.authService.userLogged()"
+      routerLink="/login"
+      class="boton-login"
+    >
+      Login
+    </button>
 
-    <button routerLink="/login" class="boton-login">Login</button>
+    <button
+      *ngIf="this.authService.userLogged()"
+      (click)="logout()"
+      class="boton-login"
+    >
+      Logout
+    </button>
   </ul>
 </div>
