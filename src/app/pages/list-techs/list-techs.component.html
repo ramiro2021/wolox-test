@@ -1,1 +1,25 @@
-<p>list-techs works!</p>
+<div class="technologys">
+  <div class="search">
+    <div>
+      <label for="">Buscar</label>
+      <input type="text" />
+    </div>
+
+    <!-- </div>
+  <div class="search"> -->
+    <div>
+      <label for="">Ordenar:</label>
+      <select name="" id="">
+        <option value="asc">Ascendente</option>
+        <option value="desc">Descendente</option>
+        <option value="">Original</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="list-tech">
+    <div class="card" *ngFor="let tech of techs">
+      <app-card-tech [tech]="tech"></app-card-tech>
+    </div>
+  </div>
+</div>

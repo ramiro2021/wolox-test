@@ -1,1 +1,26 @@
-<p>card-tech works!</p>
+<div class="individual-card">
+  <h1>{{ tech.tech }}</h1>
+  <img class="logo-card" [src]="tech.logo" [alt]="tech.tech" />
+  <div class="body-card">
+    <div class="body-item">
+      <h3>Autor:</h3>
+      <h3>{{ tech.author }}</h3>
+    </div>
+    <div class="body-item">
+      <h3>Año</h3>
+      <h3>{{ tech.year }}</h3>
+    </div>
+    <div class="body-item">
+      <h3>Lenguaje</h3>
+      <h3>{{ tech.language }}</h3>
+    </div>
+    <div class="body-item">
+      <h3>Type</h3>
+      <h3>{{ tech.type }}</h3>
+    </div>
+    <div class="body-item">
+      <h3>Licence</h3>
+      <h3>{{ tech.license }}</h3>
+    </div>
+  </div>
+</div>

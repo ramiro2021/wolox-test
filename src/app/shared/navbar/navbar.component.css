@@ -54,3 +54,46 @@ a:hover {
   background-color: rgb(193, 224, 250);
   color: dodgerblue;
 }
+
+.boton-logout {
+  background-color: white;
+  width: 160px;
+  padding: 10px;
+  color: deeppink;
+  border-style: solid;
+  border-color: deeppink;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
+.boton-logout:hover {
+  background-color: rgb(235, 206, 206);
+  color: deeppink;
+}
+
+@media (max-width: 610px) {
+  .navbar {
+    background-position: center;
+    height: 150px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  li {
+    float: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+  }
+
+  .boton-login {
+    font-size: 20px;
+  }
+
+  .boton-logout {
+    font-size: 20px;
+  }
+}

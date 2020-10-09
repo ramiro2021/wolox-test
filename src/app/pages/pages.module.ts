@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ListTechsComponent } from './list-techs/list-techs.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ListTechsComponent } from './list-techs/list-techs.component';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ComponentsModule
   ]
 })
 export class PagesModule { }

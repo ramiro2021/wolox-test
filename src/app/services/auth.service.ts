@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
 
-const base_url = environment.url;
+const base_url = environment.url_login;
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class AuthService {
   }
 
 
-  login(formData: User): Observable<User> {
+  login(formData: User) {
     return this.http.post(base_url, formData)
       .pipe(
         tap(resp => {
