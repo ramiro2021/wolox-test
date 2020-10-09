@@ -41,3 +41,48 @@
   justify-content: flex-end;
   align-self: center;
 }
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .footer-title {
+    /* font-family: "Monserrat"; */
+    font-size: 35px;
+  }
+
+  .footer-subtitle {
+    font-size: 25px;
+  }
+
+  .footer-button {
+    background-color: dodgerblue;
+    width: 200px;
+    padding: 10px;
+    color: white;
+    border-style: none;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+  }
+
+  .footer-button:hover {
+    background-color: rgb(193, 224, 250);
+    color: dodgerblue;
+  }
+
+  .footer-img {
+    margin-top: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+  }
+}
