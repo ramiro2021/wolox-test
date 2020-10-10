@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Tech } from '../models/tech.model';
 import { Observable, of } from 'rxjs';
@@ -11,6 +11,8 @@ const base_url = environment.url_techs;
   providedIn: 'root'
 })
 export class TechsService {
+
+  public totalCount: EventEmitter<number> = new EventEmitter();
 
   constructor(private http: HttpClient) { }
 

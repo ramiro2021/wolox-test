@@ -6,20 +6,32 @@ import { HomeComponent } from './home/home.component';
 import { ListTechsComponent } from './list-techs/list-techs.component';
 import { ComponentsModule } from '../components/components.module';
 
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './pipes/filter.pipe';
+import { OrderbyPipe } from './pipes/orderby.pipe';
+
+
+
 
 @NgModule({
   declarations: [
     HomeComponent,
-    ListTechsComponent
+    ListTechsComponent,
+    FilterPipe,
+    OrderbyPipe,
+
   ],
   exports: [
     HomeComponent,
-    ListTechsComponent
+    ListTechsComponent,
+    FilterPipe,
+    OrderbyPipe,
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    FormsModule
   ]
 })
 export class PagesModule { }

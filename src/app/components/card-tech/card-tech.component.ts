@@ -9,7 +9,6 @@ import { Tech } from '../../models/tech.model';
 export class CardTechComponent implements OnInit {
 
   @Input() tech: Tech;
-
   constructor() { }
 
   ngOnInit(): void {

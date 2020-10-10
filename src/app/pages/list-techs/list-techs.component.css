@@ -1,15 +1,14 @@
 .technologys {
   font-family: "Fira Sans", sans-serif;
   background-image: url("../../../assets/Backgrounds/Bg_Header.png");
+  width: 100%;
 }
 
 .list-tech {
   display: flex;
   align-items: center;
   margin-top: 80px;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -52,6 +51,15 @@ select {
 }
 option {
   height: 35px;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: row;
+  font-family: "Fira Sans", sans-serif;
+  color: dodgerblue;
 }
 
 @media (max-width: 1100px) {
@@ -102,8 +110,12 @@ option {
 
   .list-tech {
     margin-top: 100px;
+    flex-direction: column;
+    width: 700px;
     justify-content: center;
+    align-items: center;
   }
+
   input {
     margin-bottom: 15px;
   }

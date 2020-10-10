@@ -9,12 +9,13 @@ import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
 import { NopagefoundModule } from './nopagefound/nopagefound.module';
-import { AuthGuard } from './guards/auth.guard';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,
