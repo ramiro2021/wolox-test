@@ -18,7 +18,7 @@ export class TechsService {
 
   getAllTechs() {
 
-    return this.http.get<Tech[]>(base_url + 'asdasd')
+    return this.http.get<Tech[]>(base_url)
       .pipe(
         catchError(
           this.handleError
