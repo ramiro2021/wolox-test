@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
   }
 
   loginUser(): void {
+
     try {
 
       if (this.loginForm.invalid) {

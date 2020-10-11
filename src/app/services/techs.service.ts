@@ -1,8 +1,8 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Tech } from '../models/tech.model';
-import { Observable, of } from 'rxjs';
+import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
 const base_url = environment.url_techs;
@@ -18,14 +18,17 @@ export class TechsService {
 
   getAllTechs() {
 
-    return this.http.get<Tech[]>(base_url)
+    return this.http.get<Tech[]>(base_url + 'asdasd')
       .pipe(
-        catchError(err => {
-
-          return of(err.message);
-        })
+        catchError(
+          this.handleError
+        )
       );
 
+  }
+
+  handleError(error: HttpErrorResponse) {
+    return throwError(error);
   }
 
 }

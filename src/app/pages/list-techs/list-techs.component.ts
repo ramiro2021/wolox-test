@@ -24,6 +24,9 @@ export class ListTechsComponent implements OnInit {
       data => {
         this.count = data;
       }
+      , err => {
+        console.warn(err);
+      }
     );
 
   }
@@ -33,6 +36,8 @@ export class ListTechsComponent implements OnInit {
     try {
       this.techService.getAllTechs().subscribe(techs => {
         this.techs = techs;
+      }, err => {
+        console.warn(err);
       });
 
     } catch (error) {
