@@ -19,6 +19,7 @@ export class ListTechsComponent implements OnInit {
   ngOnInit(): void {
     this.getTechs();
 
+
     this.techService.totalCount.subscribe(
       data => {
         this.count = data;
@@ -32,7 +33,6 @@ export class ListTechsComponent implements OnInit {
     try {
       this.techService.getAllTechs().subscribe(techs => {
         this.techs = techs;
-        console.log(techs);
       });
 
     } catch (error) {

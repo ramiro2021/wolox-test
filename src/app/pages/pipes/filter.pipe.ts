@@ -18,13 +18,14 @@ export class FilterPipe implements PipeTransform {
     const resultTechs = [];
     for (const tech of value) {
       if (
-        tech.type.toLowerCase().indexOf(arg.toLowerCase()) > -1 ||
-        tech.tech.toLowerCase().indexOf(arg.toLowerCase()) > -1
+        tech.type.toLowerCase().indexOf(arg.toLowerCase()) !== -1 ||
+        tech.tech.toLowerCase().indexOf(arg.toLowerCase()) !== -1
       ) {
         count++;
         resultTechs.push(tech);
       }
     }
+
 
     this.techService.totalCount.emit(count);
     return resultTechs;

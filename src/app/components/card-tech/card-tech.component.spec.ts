@@ -8,14 +8,23 @@ describe('CardTechComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CardTechComponent ]
+      declarations: [CardTechComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(CardTechComponent);
     component = fixture.componentInstance;
+    component.tech = {
+      tech: 'ejemplo',
+      year: 'ejemplo',
+      author: 'ejemplo',
+      license: 'ejemplo',
+      language: 'ejemplo',
+      type: 'ejemplo',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png',
+    }
     fixture.detectChanges();
   });
 

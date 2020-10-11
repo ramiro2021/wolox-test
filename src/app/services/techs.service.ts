@@ -16,12 +16,12 @@ export class TechsService {
 
   constructor(private http: HttpClient) { }
 
-  getAllTechs(): Observable<Tech[]> {
+  getAllTechs() {
 
     return this.http.get<Tech[]>(base_url)
       .pipe(
         catchError(err => {
-          console.log(err.message);
+
           return of(err.message);
         })
       );
