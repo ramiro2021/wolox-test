@@ -1,7 +1,7 @@
 <div class="welcome">
   <div class="welcome-text">
-    <p>
-      Bienvenido a tu <strong>Entrevista tecnica</strong> en
+    <p translate>
+      Bienvenido<strong translate>Entrevista</strong>
       <strong style="color: greenyellow"> Wolox </strong>
     </p>
   </div>
@@ -34,27 +34,32 @@
         </p>
       </div>
 
-      <button class="follow-button" (click)="goTwitter()">Siguenos</button>
+      <button class="follow-button" (click)="goTwitter()" translate>
+        Siguenos
+      </button>
     </div>
   </div>
 
   <div>
-    <p class="info-text">
-      Trabajamos para
-      <strong id="color-dodgerblue"> convertir</strong>
-      <strong id="color-greenyellow"> ideas </strong>
-      en productos
+    <p class="info-text" translate>
+      Trabajamos
+      <strong id="color-dodgerblue" translate> Convertir</strong>
+      <strong id="color-greenyellow" translate> Ideas </strong>
+      <strong translate>Productos</strong>
     </p>
   </div>
 </div>
 
-<h3 class="benefits-title">
-  Entre los beneficios que ofrecemos se encuentran
+<h3 class="benefits-title" translate>
+  Beneficios
   <strong id="color-dodgerblue"> ;) </strong>
 </h3>
 
 <div id="benefits" class="benefits">
-  <div class="Individual-benefit" *ngFor="let benefit of benefits">
+  <div
+    class="Individual-benefit"
+    *ngFor="let benefit of 'BeneficiosArray' | translate"
+  >
     <img src="{{ benefit.image }}" alt="{{ benefit.name }}" />
     <h5>{{ benefit.name }}</h5>
   </div>

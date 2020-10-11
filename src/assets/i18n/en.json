@@ -1,0 +1,52 @@
+{
+  "Title": "BODY",
+  "Title2": "NAVBAR",
+  "Title3": "FOOTER",
+
+  "Inicio": "Home",
+  "BeneficiosNav": "Benefits",
+  "Tecnologias": "Technologys",
+  "Btn-Login": "Login",
+  "Btn-Logout": "Logout",
+
+  "Gracias": "Thanks you for",
+  "Completar": "completing the exercise",
+  "Invitacion": "We invite you to see more information",
+  "Conocer": "Know more",
+
+  "Bienvenido": "Welcome to your ",
+  "Entrevista": "technical interview at",
+  "Siguenos": " Follow us",
+  "Trabajamos": "We work to ",
+  "Convertir": "turn ",
+  "Ideas": "ideas ",
+  "Productos": "into products",
+  "Beneficios": " Among the benefits we offer are ",
+
+  "BeneficiosArray": [
+    {
+      "name": "Flexible schedule",
+      "image": "./assets/Ic_Hour.svg"
+    },
+    {
+      "name": "Home Office",
+      "image": "./assets/Ic_HomeOffice.svg"
+    },
+    {
+      "name": "Trainings and workshops",
+      "image": "./assets/Ic_Workshops.svg"
+    },
+    {
+      "name": "Free snacks, fruits and drinks",
+      "image": "./assets/Ic_DrinkSnacks.svg"
+    },
+    {
+      "name": "Remote Week",
+      "image": "./assets/Ic_laptop.svg"
+    },
+    {
+      "name": "Work on the latest technologies",
+      "image": "./assets/Ic_brain.svg"
+    }
+  ]
+}

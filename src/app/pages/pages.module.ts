@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
 import { OrderbyPipe } from './pipes/orderby.pipe';
 
+// import ngx-translate and the http loader
+import { TranslateModule } from '@ngx-translate/core';
+
 
 
 
@@ -31,7 +34,9 @@ import { OrderbyPipe } from './pipes/orderby.pipe';
     CommonModule,
     PagesRoutingModule,
     ComponentsModule,
-    FormsModule
+    FormsModule,
+    TranslateModule
+
   ]
 })
 export class PagesModule { }

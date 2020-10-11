@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
-import { tap } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+import { LanguajeService } from '../../services/languaje.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,14 +9,15 @@ import { Observable } from 'rxjs';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public authService: AuthService) { }
+  constructor(public authService: AuthService, private languajeService: LanguajeService) { }
 
   ngOnInit(): void {
-
-    // elimino la sesion temporal
     localStorage.removeItem('temporalSession');
   }
 
+  switchLanguage(languaje: string): void {
+    this.languajeService.switchLanguage(languaje);
+  }
 
   logout(): void {
     this.authService.logout();

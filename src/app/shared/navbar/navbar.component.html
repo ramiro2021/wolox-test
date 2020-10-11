@@ -3,28 +3,33 @@
 
   <ul>
     <li routerLinkActive="active">
-      <a routerLink="/" href=""><strong>Inicio</strong></a>
+      <a routerLink="/" href=""><strong translate>Inicio</strong></a>
     </li>
     <li routerLinkActive="active">
-      <a href="#benefits"><strong> Beneficios</strong></a>
+      <a href="#benefits"><strong translate> BeneficiosNav</strong></a>
     </li>
     <li routerLinkActive="active">
-      <a routerLink="/list-tech"><strong> Tecnologias</strong></a>
+      <a routerLink="/list-tech"><strong translate> Tecnologias</strong></a>
     </li>
     <button
+      translate
       *ngIf="!this.authService.userLogged()"
       routerLink="/login"
       class="boton-login"
     >
-      Login
+      Btn-Login
     </button>
 
     <button
+      translate
       *ngIf="this.authService.userLogged()"
       (click)="logout()"
       class="boton-logout"
     >
-      Logout
+      Btn-Logout
     </button>
+
+    <button class="button" (click)="switchLanguage('en')">En</button>
+    <button class="button" (click)="switchLanguage('es')">Es</button>
   </ul>
 </div>

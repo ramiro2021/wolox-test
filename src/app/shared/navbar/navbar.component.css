@@ -71,6 +71,23 @@ a:hover {
   color: deeppink;
 }
 
+.button {
+  background-color: white;
+  margin-left: 10px;
+  width: 50px;
+  padding: 10px;
+  color: rgb(17, 16, 17);
+  border-style: solid;
+  border-color: rgb(17, 16, 17);
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
+.button:hover {
+  background-color: rgb(168, 166, 166);
+  color: rgb(17, 16, 17);
+}
+
 @media (max-width: 610px) {
   .logo {
     height: 100px;
