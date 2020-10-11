@@ -14,6 +14,25 @@
 .logo {
   height: 100px;
   width: 150px;
+  animation: latir infinite 3s linear;
+}
+
+@keyframes latir {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(2, 2);
+  }
+
+  55% {
+    transform: scale(1.4, 1.4);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 ul {
@@ -89,10 +108,6 @@ a:hover {
 }
 
 @media (max-width: 610px) {
-  .logo {
-    height: 100px;
-    width: 100%;
-  }
   .navbar {
     padding: 50px;
     background-position: center;
@@ -117,5 +132,72 @@ a:hover {
 
   .boton-logout {
     font-size: 20px;
+  }
+
+  .logo {
+    height: 100px;
+    width: 100px;
+    animation: latir infinite 3s linear;
+  }
+
+  @keyframes latir {
+    0% {
+      transform: scale(1, 1);
+    }
+
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+
+    55% {
+      transform: scale(0.8, 0.8);
+    }
+
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .navbar {
+    background-position: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .boton-login {
+    font-size: 20px;
+    width: 250px;
+  }
+
+  .boton-logout {
+    width: 250px;
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 100%;
+    width: 60%;
+    animation: latir infinite 3s linear;
+  }
+
+  @keyframes latir {
+    0% {
+      transform: scale(1, 1);
+    }
+
+    50% {
+      transform: scale(2, 2);
+    }
+
+    55% {
+      transform: scale(1.2, 1.2);
+    }
+
+    100% {
+      transform: scale(1, 1);
+    }
   }
 }

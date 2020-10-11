@@ -203,3 +203,9 @@ p {
     width: 700px;
   }
 }
+
+@media (max-width: 450px) {
+  .welcome {
+    margin-top: 20px;
+  }
+}
