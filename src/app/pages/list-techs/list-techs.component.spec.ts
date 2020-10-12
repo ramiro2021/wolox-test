@@ -45,16 +45,25 @@ describe('ListTechsComponent', () => {
 
   it('get All Techs from Service', () => {
     const techsArray = [
-      { tech: 'Node', type: 'Back-End' },
-      { tech: 'React', type: 'Front-End' },
-      { tech: 'Vue', type: 'Front-End' },
-      { tech: 'Ruby on Rails', type: 'Back-End' },
-      { tech: 'iOS', type: 'Mobile' },
-      { tech: 'Android', type: 'Mobile' },
-      { tech: 'Angular', type: 'Front-End' },
-      { tech: 'React Native', type: 'Mobile' },
-      { tech: 'Springboot', type: 'Back-End' },
-    ];
+      {
+        tech: 'Node',
+        year: '2009',
+        author: 'Ryan Dahl',
+        license: 'MIT',
+        language: 'JavaScript',
+        type: 'Back-End',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png'
+      },
+      {
+        tech: 'React',
+        year: '2013',
+        author: 'Jordan Walke',
+        license: 'MIT',
+        language: 'JavaScript',
+        type: 'Front-End',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png'
+      }
+    ]
 
     spyOn(techsService, 'getAllTechs').and.callFake(() => {
       return from([techsArray]);

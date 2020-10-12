@@ -13,6 +13,8 @@ import { AuthService } from './services/auth.service';
 import { TechsService } from './services/techs.service';
 import { AuthGuard } from './guards/auth.guard';
 import { TechsGuard } from './guards/techs.guard';
+import { LanguajeService } from './services/languaje.service';
+import { TranslateModule, TranslateService, TranslateLoader, TranslateFakeLoader } from '@ngx-translate/core';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -30,8 +32,18 @@ describe('AppComponent', () => {
         SharedModule,
         AuthModule,
         NopagefoundModule,
+        TranslateModule.forRoot({
+          loader: { provide: TranslateLoader, useClass: TranslateFakeLoader }
+        })
       ],
-      providers: [AuthService, TechsService, AuthGuard, TechsGuard],
+      providers: [
+        AuthService,
+        TechsService,
+        AuthGuard,
+        TechsGuard,
+        LanguajeService,
+        TranslateService],
+
     }).compileComponents();
   });
 

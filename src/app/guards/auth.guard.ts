@@ -9,12 +9,13 @@ import { AuthService } from '../services/auth.service';
 })
 export class AuthGuard implements CanActivate {
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   canActivate(): boolean {
     if (!this.authService.userLogged()) {
       return true;
     } else {
+      this.router.navigate(['/list-tech']);
       return false;
     }
   }

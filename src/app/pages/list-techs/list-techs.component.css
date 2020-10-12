@@ -13,6 +13,11 @@
   flex-wrap: wrap;
 }
 
+.card:hover {
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s;
+  transform: perspective(600px) rotateY(360deg);
+}
+
 .search {
   display: flex;
   justify-content: space-around;

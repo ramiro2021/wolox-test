@@ -8,7 +8,8 @@
   width: 400px;
   margin-bottom: 80px;
   font-family: "Fira Sans", sans-serif;
-
+  margin-left: 50px;
+  margin-right: 50px;
   /* fondo */
   background: linear-gradient(to right, rgb(250, 250, 250), rgb(250, 239, 239));
   /* shadow */
@@ -34,7 +35,13 @@
   width: 500px;
 }
 
-h1 {
+.logo-card:hover {
+  filter: grayscale(80%);
+  transition: 2s;
+  transform: perspective(600px) rotateY(360deg);
+}
+
+h1:hover {
   animation: girar alternate-reverse 0.5s linear;
 }
 

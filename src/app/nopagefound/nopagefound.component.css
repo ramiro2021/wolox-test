@@ -1,0 +1,30 @@
+.error {
+  display: flex;
+  background-image: url("../../assets/Backgrounds/Bg_Footer.png");
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  flex-direction: column;
+}
+
+.error-title {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 40px;
+}
+
+@media (max-width: 640px) {
+  .error {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .error-title {
+    /* font-family: "Monserrat"; */
+    font-size: 35px;
+  }
+}
