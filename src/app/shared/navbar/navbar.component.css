@@ -67,6 +67,7 @@ a:hover {
   border-color: dodgerblue;
   border-radius: 50px;
   margin-bottom: 5px;
+  outline: none;
 }
 
 .boton-login:hover {
@@ -83,6 +84,7 @@ a:hover {
   border-color: deeppink;
   border-radius: 50px;
   margin-bottom: 5px;
+  outline: none;
 }
 
 .boton-logout:hover {
@@ -100,6 +102,7 @@ a:hover {
   border-color: rgb(17, 16, 17);
   border-radius: 50px;
   margin-bottom: 5px;
+  outline: none;
 }
 
 .button:hover {
